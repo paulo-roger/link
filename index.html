@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- manifest do PWA -->
+        <link rel="manifest" href="/manifest.json">
+        <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+            .register('/sw.js')
+            .then(serviceWorker => {
+                console.log('Service Worker registered: ' + serviceWorker);
+            })
+            .catch(error => {
+                console.log('Error registering the Service Worker: ' + error);
+            });
+        }
+        </script>
+
+        <meta content="@odragaoverde" property="og:title" />
+        <meta property="og:type" content="website" />
+        <meta content="Links para nossas redes." property="og:description" />
+        <meta content="https://link.odragaover.de/" property="og:url" />
+        <meta content="https://odragaover.de/wp-content/uploads/2022/03/logo-square2.png" property="og:image" />
+        <meta content="#52bc7e" data-react-helmet="true" name="theme-color" />
+
+        <title>@odragaoverde</title>
+        <link rel="icon" type="image/png" href="/favicon.png"/>        
+        <link rel="stylesheet" type="text/css" href="/scroll.css">
+        <link rel="stylesheet" type="text/css" href="/main.css">
+        <link rel="stylesheet" type="text/css" href="/button.css">
+
+    </head>
+    <body>
+        <div>
+            <a id="logo" href="https://odragaover.de/" target="_blank"><img src="/logo.png" alt="O Dragão Verde"></a>
+        </div>
+        <div id="odv">
+            <h3>
+                @odragaoverde<br>
+            </h3>
+        </div>
+
+        <div id="botao">
+            <div><a class="btn from-left" href="https://twitter.com/ODragaoVerde" target="_blank" rel="noopener noreferrer">Twitter</a><br></div>
+            <div><a class="btn from-left" href="https://instagram.com/odragaoverde" target="_blank" rel="noopener noreferrer">Instagram</a><br></div>
+            <div><a class="btn from-left" href="https://www.facebook.com/odragaoverde" target="_blank" rel="noopener noreferrer">Facebook</a><br></div>
+            <div><a class="btn from-left" href="https://twitch.tv/odragaoverde" target="_blank" rel="noopener noreferrer">Twitch</a> <br></div>
+            <!-- <div><a class="btn from-left" href="https://youtube.com/channel/UCb0DNwU-KTvadZJEeQSAZqA" target="_blank" rel="noopener noreferrer">Youtube</a><br></div> -->
+            <!-- <div><a class="btn from-left" href="https://anchor.fm/odragaoverde" target="_blank" rel="noopener noreferrer">Podcast</a><br></div> -->
+            <!-- <div><a class="btn from-left" href="https://www.tiktok.com/@odragaoverde20" target="_blank" rel="noopener noreferrer">TikTok</a><br></div> -->
+            <!-- <div><a class="btn from-left" href="https://www.reddit.com/r/ODragaoVerde" target="_blank" rel="noopener noreferrer">Reddit</a><br></div> -->
+        </div>
+        
+        <div id="novo">
+            <a class="site" href="https://odragaover.de/" target="_blank">odragaover.de</a>
+            <a>|</a>
+            <a class="site" href="mailto:dm@odragaover.de" target="_blank">dm@odragaover.de</a>
+        </div>           
+    </body>
+</html>
+                        
+
