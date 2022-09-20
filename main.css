@@ -22,7 +22,7 @@ body {
     overflow: hidden;
     width: 550px;
     height: 375px;
-    margin-left: 275px;
+    margin-left: calc(50% - 275px);
     margin-right: 275px;
     margin-bottom: 3rem;
 	margin-top: 3rem;
