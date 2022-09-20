@@ -31,7 +31,7 @@ body {
 .wrapper {
     /* Calculate the total width on the
     basis of number of slides */
-    width: calc(825px * 3);
+    width: calc(825px * 4);
     /* Specify the animation with the
     duration and speed */
     animation: slide 5s ease infinite;
@@ -52,11 +52,14 @@ body {
     20% {
         margin-left: calc(50% - 275px)
     }
-    60% {
+    40% {
         margin-left: calc(50% - 825px);
     }    
-    80% {
+    60% {
         margin-left: calc(50% - 1375px);
+    }
+    80% {
+        margin-left: calc(50% - 1650px);
     }
 }
 
