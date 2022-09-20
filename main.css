@@ -39,7 +39,7 @@ body {
 	float: left;
 	width: 550px;
 	height: 375px;
-    /* margin-left: 275px; */
+    margin-left: 100px;
 }
 .slide:last-child {
 	/* margin-bottom: 48px; */
