@@ -23,35 +23,70 @@ body {
     width: 100%;
     height: 375px;
     margin-bottom: 3rem;
-	margin-top: 3rem;
+    margin-top: 3rem;
     margin: auto;
 }
-/* Add animation to the slides */
+
+.container > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+  }
+
 .wrapper {
-    /* Calculate the total width on the
-    basis of number of slides */
-    width: calc(550px * 2);
-    /* Specify the animation with the
-    duration and speed */
-    animation: slide 30s ease infinite;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
+
+.wrapper>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
 .slide {
-	float: left;
-	width: 550px;
-	height: 375px;
+    float: left;
+    width: 550px;
+    height: 375px;
     margin-left: 100px;
 }
+
 .slide:last-child {
-	/* margin-bottom: 48px; */
+    /* margin-bottom: 48px; */
 }
+
 /* Define the animation
     for the slideshow */
 @keyframes slide {
+
     /* Calculate the margin-left for
         each of the slides */
     20% {
         margin-left: 0px
     }
+
     80% {
         margin-left: calc(-550px);
     }
