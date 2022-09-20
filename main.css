@@ -50,9 +50,11 @@ body {
     20% {
         margin-left: 0px;
     }
-
-    80% {
+    60% {
         margin-left: calc(-550px * 1);
+    }
+    80% {
+        margin-left: calc(-550px * 2);
     }
 }
 
