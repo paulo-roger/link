@@ -22,6 +22,8 @@ body {
     overflow: hidden;
     width: 550px;
     height: 375px;
+    margin-left: 275px;
+    margin-right: 275px;
     margin-bottom: 3rem;
 	margin-top: 3rem;
 }
@@ -29,10 +31,10 @@ body {
 .wrapper {
     /* Calculate the total width on the
     basis of number of slides */
-    width: calc(550px * 3);
+    width: calc(550px * 2);
     /* Specify the animation with the
     duration and speed */
-    animation: slide 30s ease infinite;
+    animation: slide 5s ease infinite;
 }
 .slide {
 	float: left;
@@ -48,10 +50,10 @@ body {
     /* Calculate the margin-left for
         each of the slides */
     20% {
-        margin-left: calc(25% - 275px)
+        margin-left: calc(50% - 275px)
     }
     80% {
-        margin-left: calc(25% - 825px);
+        margin-left: calc(0% - 825px);
     }
 }
 
