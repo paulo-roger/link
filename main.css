@@ -40,6 +40,8 @@ body {
 	float: left;
 	width: 550px;
 	height: 375px;
+    margin-bottom: 3rem;
+	margin-top: 3rem;
 }
 .slide:last-child {
 	/* margin-bottom: 48px; */
