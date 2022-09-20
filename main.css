@@ -38,7 +38,7 @@ body {
 }
 .slide {
 	float: left;
-	width: 100%;
+	width: 50%;
 	height: 375px;
 }
 .slide:last-child {
