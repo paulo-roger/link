@@ -20,7 +20,7 @@ body {
 /* Styling the area of the slides */
 #container {
     overflow: hidden;
-    width: 100%;
+    width: 50%;
     height: 375px;
     margin-left: auto;
     margin-right: auto;
