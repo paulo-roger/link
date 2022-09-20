@@ -25,7 +25,7 @@ body {
     /* margin-left: calc(50% - 275px);
     margin-right: 275px; */
     margin-bottom: 3rem;
-	margin-top: 3rem;
+	margin-top: 4rem;
 }
 /* Add animation to the slides */
 .wrapper {
@@ -39,7 +39,7 @@ body {
 }
 .slide {
 	float: left;
-	width: 1920px;
+	width: 1925px;
 	height: 375px;
     margin-left: 100px;
     /* margin-left: calc(50% - 275px); */
