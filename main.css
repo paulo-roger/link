@@ -20,9 +20,9 @@ body {
 /* Styling the area of the slides */
 #container {
     overflow: hidden;
-    height: 510px;
-    width: 728px;
-    margin: 0 auto;
+    /* height: 510px; */
+    width: 550px;
+    /* margin: 0 auto; */
 }
 /* Style each of the sides
     with a fixed width and height */
