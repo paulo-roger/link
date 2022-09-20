@@ -24,6 +24,7 @@ body {
     height: 375px;
     margin-bottom: 3rem;
 	margin-top: 3rem;
+    margin: auto;
 }
 /* Add animation to the slides */
 .wrapper {
@@ -48,10 +49,10 @@ body {
     /* Calculate the margin-left for
         each of the slides */
     20% {
-        margin-left: calc(50% - 275px)
+        margin-left: calc(0)
     }
     80% {
-        margin-left: calc(50% - 825px);
+        margin-left: calc(-550px);
     }
 }
 
