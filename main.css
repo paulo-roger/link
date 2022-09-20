@@ -53,7 +53,7 @@ body {
         margin-left: 0px
     }
     80% {
-        margin-left: calc(100% - 1925px);
+        margin-left: calc(-550px);
     }
 }
 
