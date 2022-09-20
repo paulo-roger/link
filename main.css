@@ -1,24 +1,71 @@
 body {
     background-color: #151515;
     display: flex;
-	justify-content: center;
-	/* align-items: center; */
-	flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
 }
 
 html {
     font-family: 'Playfair Display', serif;
 }
 
+body {
+    font-family: Helvetica, sans-serif;
+    padding: 5%;
+    text-align: center;
+    font-size: 50;
+}
+
+/* Styling the area of the slides */
+#container {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+}
+/* Style each of the sides
+    with a fixed width and height */
+/* .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+} */
+/* Add animation to the slides */
+.wrapper {
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(550px * 2);
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 10s ease infinite;
+}
+/* Define the animation
+    for the slideshow */
+@keyframes botao {
+    /* Calculate the margin-left for
+        each of the slides */
+    50% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: calc(-550 * 1);
+    }
+}
+
+
 div#odv {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 h3 {
     color: whitesmoke;
     margin-bottom: 24px;
 }
+
 h3:hover {
     color: #52bc7e;
     cursor: default;
@@ -37,6 +84,7 @@ a {
     bottom: 1%;
     position: absolute;
 }
+
 .site {
     color: whitesmoke;
     text-align: start;
@@ -44,6 +92,7 @@ a {
     font-family: 'Open Sans', sans-serif;
     /* font: menu; */
 }
+
 .site:hover {
     color: #52bc7e;
     /* text-decoration: underline; */
@@ -60,7 +109,7 @@ h2 {
     margin-right: auto;
 }
 
-#logo{
+#logo {
     display: block;
     margin-top: 30px;
     margin-left: auto;
@@ -70,9 +119,11 @@ h2 {
     filter: brightness(0.8) drop-shadow(2px 4px 6px black);
     border-radius: 20px;
 }
- #logo:hover{
+
+#logo:hover {
     filter: none;
 }
+
 #logo:hover::before {
     box-shadow: inset 2px 4px 6px black;
     content: '';
@@ -82,25 +133,30 @@ h2 {
     position: absolute;
     border-radius: 20px;
 }
+
 img {
     width: 100%;
     border-radius: 20px;
-    display: block;    
+    display: block;
 }
 
 @media only screen and (max-width: 768px) {
+
     /* For mobile phones: */
     .btn {
         width: 90% !important;
         font-size: 18px !important;
     }
-    .from-left:before, .from-left:after {
+
+    .from-left:before,
+    .from-left:after {
         height: 104%;
     }
 
     #logo {
         width: 30%;
     }
+
     #logo:hover::before {
         width: 30%;
     }
@@ -110,4 +166,3 @@ img {
         width: 90%;
     }
 }
-
