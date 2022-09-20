@@ -52,16 +52,16 @@ body {
     /* Calculate the margin-left for
         each of the slides */
     20% {
-        margin-left: calc(50% - 275px)
+        margin-left: calc(50% - 550px)
     }
     40% {
-        margin-left: calc(50% - 825px);
+        margin-left: calc(50% - 1100px);
     }    
     60% {
-        margin-left: calc(50% - 1375px);
+        margin-left: calc(50% - 1650px);
     }
     80% {
-        margin-left: calc(50% - 1925px);
+        margin-left: calc(50% - 2200px);
     }
 }
 
