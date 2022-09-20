@@ -39,7 +39,7 @@ body {
 }
 .slide {
 	float: left;
-	width: 100%;
+	width: 150px;
 	height: 375px;
     /* margin-left: calc(50% - 275px); */
 }
