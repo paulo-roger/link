@@ -20,10 +20,10 @@ body {
 /* Styling the area of the slides */
 #container {
     overflow: hidden;
-    width: 50%;
+    width: 550px;
     height: 375px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 275px;
+    margin-right: 275px;
     margin-bottom: 3rem;
 	margin-top: 3rem;
 }
@@ -31,14 +31,14 @@ body {
 .wrapper {
     /* Calculate the total width on the
     basis of number of slides */
-    width: calc(50% * 2);
+    width: calc(550px * 2);
     /* Specify the animation with the
     duration and speed */
     animation: slide 5s ease infinite;
 }
 .slide {
 	float: left;
-	width: 50%;
+	width: 550px;
 	height: 375px;
 }
 .slide:last-child {
