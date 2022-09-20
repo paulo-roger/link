@@ -93,28 +93,3 @@ html {
 	/* font-size: 12px; */
 	font-family: Verdana;
 }
-
-.botao {
-	margin-bottom: 3rem;
-	margin-top: 3rem;
-	float: left;
-	width: 550px;
-}
-
-.botao:last-child {
-	margin-bottom: 48px;
-}
-
-/* Define the animation
-    for the slideshow */
-	@keyframes botao {
-		/* Calculate the margin-left for
-			each of the slides */
-		20% {
-			margin-left: 0px;
-		}
-	
-		80% {
-			margin-left: calc(-550px * 1);
-		}
-	}

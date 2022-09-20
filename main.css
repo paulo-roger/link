@@ -20,17 +20,11 @@ body {
 /* Styling the area of the slides */
 #container {
     overflow: hidden;
-    /* height: 510px; */
     width: 550px;
-    /* margin: 0 auto; */
+    height: 375px;
+    margin-bottom: 3rem;
+	margin-top: 3rem;
 }
-/* Style each of the sides
-    with a fixed width and height */
-/* .slide {
-    float: left;
-    height: 510px;
-    width: 728px;
-} */
 /* Add animation to the slides */
 .wrapper {
     /* Calculate the total width on the
@@ -39,6 +33,27 @@ body {
     /* Specify the animation with the
     duration and speed */
     animation: slide 10s ease infinite;
+}
+.botao {
+	float: left;
+	width: 550px;
+	height: 375px;
+}
+.botao:last-child {
+	margin-bottom: 48px;
+}
+/* Define the animation
+    for the slideshow */
+@keyframes botao {
+    /* Calculate the margin-left for
+        each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+
+    80% {
+        margin-left: calc(-550px * 1);
+    }
 }
 
 div#odv {
