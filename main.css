@@ -41,6 +41,7 @@ body {
 	float: left;
 	width: 1920px;
 	height: 375px;
+    margin-left: 275px;
     /* margin-left: calc(50% - 275px); */
 }
 .slide:last-child {
