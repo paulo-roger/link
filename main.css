@@ -51,7 +51,7 @@ body {
         margin-left: calc(50% - 275px)
     }
     80% {
-        margin-left: calc(0% - 825px);
+        margin-left: calc(50% - 825px);
     }
 }
 
