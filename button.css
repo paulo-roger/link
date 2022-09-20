@@ -1,29 +1,30 @@
 /* ~~~~~~~ INIT. BTN ~~~~~~~ */
 
 .btn {
-    color: whitesmoke;
-    text-decoration: none;
-    text-align: center;
-    margin: 2px;
-    width: 550px;
-    padding: 10px;
-    font-size: 24px;
-    border: 2px solid rgb(82, 188, 126);
-    display: block;
-    /* letter-spacing: 0.5rem; */
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bold;
-	position: relative;	
+	color: whitesmoke;
+	text-decoration: none;
+	text-align: center;
+	margin: 2px;
+	width: 550px;
+	padding: 10px;
+	font-size: 24px;
+	border: 2px solid rgb(82, 188, 126);
+	display: block;
+	/* letter-spacing: 0.5rem; */
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+	position: relative;
 	/* color: var(--inv); */
-	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
 	cursor: pointer;
 	user-select: none;
 }
 
-.btn:before, .btn:after {
+.btn:before,
+.btn:after {
 	content: '';
-	position: absolute;	
+	position: absolute;
 	transition: inherit;
 	z-index: -1;
 }
@@ -44,7 +45,7 @@
 
 /* From Left */
 
-.from-left:before, 
+.from-left:before,
 .from-left:after {
 	top: -1px;
 	width: 0;
@@ -55,7 +56,7 @@
 	right: 0;
 	/* border: 3px solid var(--inv); */
 	border-left: 0;
-	border-right: 0;	
+	border-right: 0;
 }
 
 .from-left:after {
@@ -69,14 +70,16 @@
 
 /* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 	box-sizing: border-box;
 }
 
 body {
 	--def: whitesmoke;
 	--inv: rgb(82, 188, 126);
-    /*rgb(48, 116, 66)/*
+	/*rgb(48, 116, 66)/*
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -88,11 +91,30 @@ body {
 
 html {
 	/* font-size: 12px; */
-	font-family:  Verdana;
+	font-family: Verdana;
 }
 
-#botao {
+.botao {
 	margin-bottom: 3rem;
 	margin-top: 3rem;
+	float: left;
+	width: 550px;
 }
-#botao:last-child {margin-bottom: 48px;}
+
+.botao:last-child {
+	margin-bottom: 48px;
+}
+
+/* Define the animation
+    for the slideshow */
+	@keyframes botao {
+		/* Calculate the margin-left for
+			each of the slides */
+		50% {
+			margin-left: 0px;
+		}
+	
+		100% {
+			margin-left: calc(-550 * 1);
+		}
+	}

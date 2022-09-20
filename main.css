@@ -40,20 +40,6 @@ body {
     duration and speed */
     animation: slide 10s ease infinite;
 }
-/* Define the animation
-    for the slideshow */
-@keyframes botao {
-    /* Calculate the margin-left for
-        each of the slides */
-    50% {
-        margin-left: 0px;
-    }
-
-    100% {
-        margin-left: calc(-550 * 1);
-    }
-}
-
 
 div#odv {
     display: block;
