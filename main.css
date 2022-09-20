@@ -34,6 +34,7 @@ body {
     /* Specify the animation with the
     duration and speed */
     animation: slide 5s ease infinite;
+    margin-left: 100px;
 }
 .slide {
 	float: left;
