@@ -40,7 +40,7 @@ body {
 	height: 375px;
 }
 .slide:last-child {
-	margin-bottom: 48px;
+	/* margin-bottom: 48px; */
 }
 /* Define the animation
     for the slideshow */
@@ -48,10 +48,10 @@ body {
     /* Calculate the margin-left for
         each of the slides */
     20% {
-        margin-left: 0px;
+        margin-left: calc(50% -275px)
     }
     80% {
-        margin-left: calc(-550px * 1);
+        margin-left: calc(50% -825px * 1);
     }
 }
 
